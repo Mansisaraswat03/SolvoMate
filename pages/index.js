@@ -10,7 +10,7 @@ export default function Home({posts}) {
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-2">
     <div className="col-span-1 lg:col-span-8">
     {posts.map((post, index) => {
-           return  <PostCard post={post.node}/>
+           return  <PostCard key={index} post={post.node}/>
     })}
     </div>
     <div className="lg:col-span-4 col-span-1">
