@@ -1,6 +1,4 @@
-import PostCard from "@/components/PostCard";
-import PostWidget from "@/components/PostWidget";
-import Categories from "@/components/Categories";
+import { PostCard, Categories, PostWidget } from '../components';
 import { getPosts } from "@/services";
 
 export default function Home({posts}) {
